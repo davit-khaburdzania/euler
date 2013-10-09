@@ -1,4 +1,4 @@
-var sum=0;
+var sum;
 
 for(var i=3; i<=1000; i++){
 	var a=i%3;
