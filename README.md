@@ -1,4 +1,4 @@
-euler
+Solutions..
 =====
 
-solutions for Project Euler in different languages
+solutions for Many problems in different languages
