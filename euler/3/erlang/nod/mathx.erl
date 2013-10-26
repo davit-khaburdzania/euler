@@ -1,5 +1,13 @@
 -module(mathx).
--export([floor/1, ceil/1]).
+-export([floor/1, ceil/1, isPrime/1]).
+
+isPrime(2) -> true;
+isPrime(N) when N =< 1 -> false;
+isPrime(N) ->
+  case length([ X || X <- lists:seq(2, mathx:ceil(math:sqrt(N))), N rem X == 0 ]) of
+    0 -> true;
+    _ -> false
+  end.
 
 floor(X) ->
   T = erlang:trunc(X),
